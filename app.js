@@ -14,20 +14,6 @@ function initMap() {
     });
   }
 
-
-
-  function MapSearch() {
-    var lat
-    var long
-    var distance
-    var type_of
-    var price
-    var social
-    var bed
-    var bath
-
-  }
-
   var data;
 	$.ajax({
 	  type: "GET",  
