@@ -4,17 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>On-Campus Housing Quiz</title>
 </head>
 <body>
     <h1>Heel Estate</h1>
     <link rel = 'stylesheet' href='main.css'>
         <p id="msg">Find your best housing fit around UNC Chapel Hill!</p>
-        <h2>Take the Quiz:</h2>
+        <h2>Take the Quiz - On-campus housing:</h2>
         <h3 id="q1">Would you prefer hall-style or suite-style?</h3>
+        <p id="dorminfo">Hall-style are on north campus, and suite-style are more on south campus!</p>
         <button class="btn">Hall-style</button>
         <button class="btn">Suite-style</button>
-    
+
+        <h3 id="q2">If you selected suite-style, would you prefer a 4-person or 8-person suite?</h3>
+        <button class="btn">4 person</button>
+        <button class="btn">8 person</button>
+
+        <h3 id="q3">How much of a priority is having a laundry room in your residence hall?</h3>
+        <select name="laundry" id="laundry">
+            <option value="default"></option>
+            <option value="1">Not important</option>
+            <option value="2">Somewhat important</option>
+            <option value="3">Very important</option>
+        </select>
+
+        <h3 id="q4">How social of an environment would you enjoy?</h3>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+
+        <p ></p>
+        
+        <button class="btn">SUBMIT</h2>
+
         <style>
             body {
                 background: #ADDFFF;
