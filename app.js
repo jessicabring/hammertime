@@ -17,6 +17,18 @@ function initMap() {
 
 
   function MapSearch() {
+    const arr = [
+      {name: "Crosstown", Latitude: 35.90892, Longitude: -78.98312, Distance: 4.5, Type: "Apartment", Social: 2, Br: 1, Bd: 2, Rent: 1422},
+      {name: "Trinity at the Hill", Latitude: 35.89475, Longitude: -79.08498, Distance: 3.3, Type: "Apartment", Social: 2, Br: 2, Bd: 2, Rent: 1398},
+      {name: "Alderman", Latitude: 35.9149, Longitude: -79.04816, Distance: 1.0, Type: "Residence Hall", Social:2},
+      {name: "Morrison", Latitude: 35.90464167, Longitude: -79.04618652, Distance: 1.0, Type: "Residence Hall", Social:4}
+
+      
+
+
+    ]
+
+    
     var lat
     var long
     var distance
@@ -28,7 +40,8 @@ function initMap() {
 
   }
 
-  var data;
+
+var data;
 	$.ajax({
 	  type: "GET",  
 	  url: "databased.csv",
@@ -45,7 +58,7 @@ function initMap() {
     dataFile:[]
 };
 
- 
+
 function readImage(input) {
     console.log(input)
  if (input.files && input.files[0]) {
