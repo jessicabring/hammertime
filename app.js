@@ -13,3 +13,17 @@ function initMap() {
       map: map,
     });
   }
+
+
+
+  function MapSearch() {
+    var lat
+    var long
+    var distance
+    var type_of
+    var price
+    var social
+    var bed
+    var bath
+
+  }
