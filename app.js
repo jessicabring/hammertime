@@ -15,7 +15,7 @@ function initMap() {
   }
 
 
-
+  
   function MapSearch() {
     var lat
     var long
