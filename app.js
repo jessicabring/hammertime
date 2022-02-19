@@ -15,7 +15,7 @@ function initMap() {
   }
 
 
-  
+
   function MapSearch() {
     var lat
     var long
@@ -27,3 +27,15 @@ function initMap() {
     var bath
 
   }
+
+  var data;
+	$.ajax({
+	  type: "GET",  
+	  url: "js-tutorials.com_sample_file.csv",
+	  dataType: "text",       
+	  success: function(response)  
+	  {
+		data = $.csv.toArrays(response);
+		generateHtmlTable(data);
+	  }   
+	});
