@@ -14,22 +14,23 @@ function initMap() {
     });
   }
 
-  function MapSearch() {
-    var lat
-    var long
-    var distance
-    var type_of
-    var price
-    var social
-    var bed
-    var bath
-
-  }
-
+  var data;
+	$.ajax({
+	  type: "GET",  
+	  url: "databased.csv",
+	  dataType: "text",       
+	  success: function(response)  
+	  {
+		data = $.csv.toArrays(response);
+		generateHtmlTable(data);
+    print(data);
+	  }   
+	});
   var obj_csv = {
     size:0,
     dataFile:[]
 };
+
  
 function readImage(input) {
     console.log(input)
