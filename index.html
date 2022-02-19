@@ -13,7 +13,7 @@
       #map {
         height: 400px;
         /* The height is 400 pixels */
-        width: 100%;
+        width: 50%;
         /* The width is the width of the web page */
       }
     </style>
@@ -21,15 +21,15 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
+        const chapelhill = { lat: 35.913200, lng: -79.055847 };
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
+          zoom: 10,
+          center: chapelhill,
         });
         // The marker, positioned at Uluru
         const marker = new google.maps.Marker({
-          position: uluru,
+          position: chapelhill,
           map: map,
         });
       }
