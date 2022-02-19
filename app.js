@@ -31,18 +31,20 @@ function initMap() {
   var data;
 	$.ajax({
 	  type: "GET",  
-	  url: "js-tutorials.com_sample_file.csv",
+	  url: "databased.csv",
 	  dataType: "text",       
 	  success: function(response)  
 	  {
 		data = $.csv.toArrays(response);
 		generateHtmlTable(data);
+    print(data);
 	  }   
 	});
   var obj_csv = {
     size:0,
     dataFile:[]
 };
+
  
 function readImage(input) {
     console.log(input)
