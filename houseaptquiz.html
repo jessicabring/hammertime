@@ -14,6 +14,7 @@
         <h3 id="q1">How big of a place are you looking for?</h3>
         <label for="beds">Bedrooms:</label>
             <select name="beds" id="beds">
+                <option value="default"></option>
                 <option value="1br">1</option>
                 <option value="2br">2</option>
                 <option value="3br">3</option>
@@ -22,6 +23,7 @@
 
             <label for="baths">Bathrooms:</label>
             <select name="baths" id="baths">
+                <option value="default"></option>
                 <option value="1ba">1</option>
                 <option value="2ba">2</option>
                 <option value="3ba">3</option>
@@ -32,6 +34,7 @@
         
         <label for="distance">Distance to campus:</label>
         <select name="distance" id="distance">
+                <option value="default"></option>
                 <option value="1">Within 2 mi</option>
                 <option value="2">Within 5 mi</option>
                 <option value="3">Within 7 mi</option>
@@ -41,12 +44,19 @@
         <h3 id="q3">What price range would you like to stay within?</h3>
         <label for="maxprice">Under:</label> 
         <select name="maxprice" id="maxprice">
+                <option value="default"></option>
                 <option value="range1">$600</option>
                 <option value="range2">$700</option>
                 <option value="range3">$800</option>
-                <option value="range4">$900</option>
                 <option value="nomax">None</option>
             </select>
+        <h3 id="q4">How social of an environment would you enjoy?</h3>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+    
         <style>
             body {
                 background: #ADDFFF;
