@@ -21,3 +21,4 @@ if (houseType == "dorm") {
         var suiteStyle;
     }
 }
+

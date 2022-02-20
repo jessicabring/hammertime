@@ -32,11 +32,20 @@
       
 
     </style>
+    
+    <script src="matchsys.js">
+      
+      initMap(avery.lat, avery.long);
+        </script>
+
     <script>
       // Initialize and add the map
-      function initMap() {
+      import {alderman, avery, carmichael, connor, craigeNorth, hardin, horton, joyner, kenan, mcIver, morrison, oldEast, oldWest, parker, ram1, ram2, ram3, ram4, ram5, spencer, teague, winston, resHallsList} from 'ResHalls.js';
+      import {crosstown, trinity, stratMLK, stratHills, royal, pinegate, southsq, chapelRidge, shadowood, kingswood, houseAptList} from 'houseapts.js';
+      
+      function initMap(lat, long) {
         // The location of Chapel Hill
-        const chapelhill = { lat: 35.913200, lng: -79.055847 };
+        const chapelhill = { lat: avery.lat, lng: avery.long};
         // The map, centered at Chapel Hill
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
@@ -47,11 +56,12 @@
         const marker = new google.maps.Marker({
           position: chapelhill,
           map: map,
-        
-       
         });
+        
       }
 </script>
+
+
 
 
   </head>

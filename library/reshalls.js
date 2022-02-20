@@ -3,7 +3,7 @@ var alderman = new ResHall(
 )
 
 var avery = new ResHall(
-    "Avery",35.9065,-79.04425,true, 2,"suite"
+    "Avery", 35.9065, -79.04425,true, 2,"suite"
 )
 
 var carmichael = new ResHall(
