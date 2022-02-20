@@ -107,7 +107,7 @@ suite.addEventListener('click', function() {
 
 suite4.addEventListener('click', function() {
     if(!select8) {
-        if(!selecthall) {
+        if(!select4) {
             suite4.style.backgroundColor = '#5CB3FF';
             select4 = true;
         } else {
@@ -119,7 +119,7 @@ suite4.addEventListener('click', function() {
 
 suite8.addEventListener('click', function() {
     if(!select4) {
-        if(!selecthall) {
+        if(!select8) {
             suite8.style.backgroundColor = '#5CB3FF';
             select8 = true;
         } else {
