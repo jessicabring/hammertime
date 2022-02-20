@@ -11,14 +11,13 @@ if (type != null) {
 }
 
 var socialScore = socialscore;
+const matches = [];
 
 if (housingType == "apartment" || "house") {
     housingType = type;
     var bedrooms = bed;
     var bathrooms = bath;
     var dist = distance;
-    var cost = price;
-    const matches = [];
     for (let i = 0; i < houseAptList.length; i++) {
         if (
             houseAptList[i].type == housingType &&
@@ -60,4 +59,6 @@ if (houseType == "hall" || "8 person suite" || "4 person suite") {
         }
     }
 }
+
+export {matches};
 
