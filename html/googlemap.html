@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <header>
+    <img src="../images/heelEstate.logo.PNG" height="250" width="250">
+  </header>
   <head>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Heel Estate</title>
+     <link rel="stylesheet" href="../main.css">
   
 
 
@@ -19,10 +23,13 @@
       }
       body {
         font-family: 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        color: rgb(0, 0, 0);
+        background-color:#5CB3FF;
+        text-align: center;
+        height: 200px;
         }
-        h3 {
-            color: darkcyan;
-        }
+      
 
     </style>
     <script>
@@ -34,23 +41,30 @@
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
           center: chapelhill,
+          
         });
         // The marker, positioned at Chapel Hill
         const marker = new google.maps.Marker({
           position: chapelhill,
           map: map,
+        
+       
         });
       }
 </script>
 
 
   </head>
+
   <body>
-    <h3>Heel Estate</h3>
+    
+    <h3>Apartments That Match Your Criteria</h3>
     <link rel = 'stylesheet' href='main.css'>
 
     <!--The div element for the map -->
-    <div id="map"></div>
+    <div id= "outerdiv">
+    <div id ="map" />
+    </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script

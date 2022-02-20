@@ -25,7 +25,7 @@ body {
     footer {
         height : 50px;
         padding : 20px 0 70px;
-        color : blueviolet;
+        color : rgb(255, 255, 255);
         background : url(../hammertime/images/REALMAP.png) 50% no-repeat #0c6d85;
         background-attachment : fixed, fixed, fixed, scroll;
         background-image : url(../hammertime/images/REALMAP.png);
@@ -35,3 +35,7 @@ body {
         text-align : center;
         transition : color 0.25s ease-out, box-shadow 0.25s ease-out;
         }
+
+    #outerdiv {border: 4px solid rgb(31, 64, 172); width: 99%; height: 205%; position:sticky; text-align:center; padding: 20 px 0 70px;}
+
+    #map {border: 4px solid rgb(118, 189, 255); width: 80%; height: 80%; margin:1px auto; display:inline-block}
