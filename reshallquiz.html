@@ -13,12 +13,13 @@
         <h2>Take the Quiz - On-campus housing:</h2>
         <h3 id="q1">Would you prefer hall-style or suite-style?</h3>
         <p id="dorminfo">Hall-style are on north campus, and suite-style are more on south campus!</p>
-        <button class="btn">Hall-style</button>
-        <button class="btn">Suite-style</button>
+        <button class="hallstyle" value="hall style">Hall-style</button>
+        <button class="suitestyle" value="suite style">Suite-style</button>
 
         <h3 id="q2">If you selected suite-style, would you prefer a 4-person or 8-person suite?</h3>
-        <button class="btn">4 person</button>
-        <button class="btn">8 person</button>
+        <p id="note">If you chose hall-style, skip this question.</p>
+        <button class="4suite" value="4">4 person</button>
+        <button class="8suite" value="8">8 person</button>
 
         <h3 id="q3">How much of a priority is having a laundry room in your residence hall?</h3>
         <select name="laundry" id="laundry">
@@ -29,16 +30,16 @@
         </select>
 
         <h3 id="q4">How social of an environment would you enjoy?</h3>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
+        <button class="social1" value="1">1</button>
+        <button class="social2" value="2">2</button>
+        <button class="social3" value="3">3</button>
+        <button class="social4" value="4">4</button>
+        <button class="social5" value="5">5</button>
 
         <p ></p>
         
         <button class="btn">SUBMIT</h2>
-
+        <script src="quiz.js"></script>
         <style>
             body {
                 background: #ADDFFF;
