@@ -5,7 +5,6 @@ class ResHall {
         this.name = name;
         this.lat = lat;
         this.long = long;
-        this.distance = distance;
         this.social = social;
         this.style = style;
     }

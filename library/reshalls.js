@@ -34,3 +34,16 @@ var kenan = new ResHall(
     "Kenan",35.91471,-79.04743,1,2,"corridor"
 )
 
+var mcIver = new ResHall(
+    "McIver",35.91423619,-79.04788676,1,2,"corridor"
+)
+
+var morrison = new ResHall(
+    "Morrison",35.90464167,-79.04618652,1,4,"suite"
+)
+
+var oldEast = new ResHall(
+    "Old East",35.91247771,-79.05065187,1,2,"corridor"
+)
+
+var oldWest
