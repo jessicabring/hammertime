@@ -15,12 +15,7 @@
 
     <style type="text/css">
       /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;
-        /* The height is 400 pixels */
-        width: 50%;
-        /* The width is the width of the web page */
-      }
+      
       body {
         font-family: 'Trebuchet MS', sans-serif;
         font-size:x-large;
@@ -32,17 +27,17 @@
       
 
     </style>
-
+<!-- 
     <script>
       // Initialize and add the map
       function initMap(lat, long) {
         // The location of Chapel Hill
-        // const chapelhill = { lat: avery.long, lng: avery.long};
-        const chapelhill = {lat: 35.9132, lng: -79.0558};
+        const chapelhillapt = { lat: 35.90892, lng: -78.98312};
+        const chapelhillapt2 = {lat: 35.92547, lng: -79.05023};
         // The map, centered at Chapel Hill
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
-          center: chapelhill,
+          center: chapelhillapt,
           
         });
         // The marker, positioned at Chapel Hill
@@ -50,32 +45,82 @@
           position: chapelhill,
           map: map,
         });
+
+        const marker1 = new google.maps.Marker({
+          position: chapelhillapt2,
+          map: map,
+        })
         
       }
 </script>
 
+ -->
 
 
-
-  </head>
-
-  <body>
-    
-    <h3>Listings That Match Your Criteria</h3>
-    <link rel = 'stylesheet' href='main.css'>
-
-    <!--The div element for the map -->
-    <div id= "outerdiv">
-    <div id ="map" />
-    </div>
+  
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHCN34rXWhrzLlTZI1ZEuPaNk2Uo5Uw4M&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+   
 
+    <head>
+      <title>Listings That Match Your Criteria</title>
+      <script>
+        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let labelIndex = 0;
 
+        function initMap() {
+        const chapelridge = {lat: 35.94698, lng: -79.06046};
+        const southsquare = {lat: 35.96269, lng: -78.957111};
+        const pinegate = {lat: 35.948025, lng: -79.00964};
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: chapelridge,
+          
+        });
+        
+        // This event listener calls addMarker() when the map is clicked.
+        google.maps.event.addListener(map, "click", (event) => {
+          addMarker(event.latLng, map);
+          
+        });
+        // Add a marker at the center of the map.
+        addMarker(chapelridge, map);
+        addMarker(southsquare, map);
+        addMarker(pinegate, map);
+        }
+
+        // Adds a marker to the map.
+        function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+          new google.maps.Marker({
+            position: location,
+            label: labels[labelIndex++ % labels.length],
+            map: map,
+          });
+
+          }
+
+      </script>
+      <!-- jsFiddle will insert css and js -->
+    </head>
+    <body>
+      <div id="map"></div>
+  
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+        async
+      ></script>
+    </body>
+<body>
+  
+  <h3>Listings That Match Your Criteria</h3>
+  <link rel = 'stylesheet' href='main.css'>
+
+  <!--The div element for the map -->
+  
+  
    
   </body>
   <footer>
