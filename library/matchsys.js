@@ -60,7 +60,5 @@ if (houseType == "hall" || "8 person suite" || "4 person suite") {
     }
 }
 
-initMap(resHallsList[0].long, resHallsList[0].lat);
-
 export {matches};
 
