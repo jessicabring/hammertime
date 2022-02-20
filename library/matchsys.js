@@ -28,8 +28,30 @@ if (housingType == "apartment" || "house") {
 
 if (houseType == "dorm") {
     var dormStyle;
+    var laundry;
+    // do we want to add a north/south campus category to residence halls?
+    // I'm also working on figuring out how many ppl each dorm accommodates per suite
     if (dormStyle == "suite-style") {
         var suiteStyle;
+        if (laundry == "Not important") {
+            for (let i = 0; i < resHallsList.length; i++) {
+                if (
+                    resHallsList[i].style == dormStyle &&
+                    resHallsList[i].social - socialScore <= 2) {
+                    matches.push(resHallsList[i]);
+                }
+            }
+        }
+        else {
+            for (let i = 0; i < resHallsList.length; i++) {
+                if (
+                    resHallsList[i].style == dormStyle &&
+                    resHallsList[i].social - socialScore <= 2 &&
+                    resHallsList[i].laundry) {
+                    matches.push(resHallsList[i]);
+                }
+            }
+        }
     }
 }
 
