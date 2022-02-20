@@ -76,10 +76,34 @@ var hall = document.querySelector('.hallstyle');
 var selecthall = false;
 var suite = document.querySelector('.suitestyle');
 var selectsuite = false;
-var suite4 = document.querySelector('.4suite');
+var suite4 = document.querySelector('.suite4');
 var selectsuite4 = false;
-var suite8 = document.querySelector('.8suite');
+var suite8 = document.querySelector('.suite8');
 var selectsuite8 = false;
+
+hall.addEventListener('click', function() {
+    if(!selectsuite) {
+        if(!selecthall) {
+            hall.style.backgroundColor = '#5CB3FF';
+            selecthall = true;
+        } else {
+            hall.style.backgroundColor = 'white';
+            selecthall = false;
+        }
+    }
+});
+
+suite.addEventListener('click', function() {
+    if(!selecthall) {
+        if(!selectsuite) {
+            suite.style.backgroundColor = '#5CB3FF';
+            selectsuite = true;
+        } else {
+            suite.style.backgroundColor = 'white';
+            selectsuite = false;
+        }
+    }
+});
 
 suite4.addEventListener('click', function() {
     if(!selectsuite8) {
