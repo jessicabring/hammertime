@@ -60,5 +60,9 @@ if (houseType == "hall" || "8 person suite" || "4 person suite") {
     }
 }
 
+var simple=function(){
+    return matches;
+}
+
 export {matches};
 
