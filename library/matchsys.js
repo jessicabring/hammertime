@@ -1,21 +1,27 @@
 'use strict'
 import {resHallsList} from 'reshalls.js';
 import {houseAptList} from 'houseapts.js';
-import {socialscore, laundryscore, dormtype, bed, bath, distance} from 'quiz.js';
+import {socialscore, laundryscore, dormtype, bed, bath, distance, price, type} from 'quiz.js';
 
 var housingType;
+if (type != null) {
+    housingType = type;
+} else {
+    housingType = dormtype;
+}
+
 var socialScore = socialscore;
+const matches = [];
 
 if (housingType == "apartment" || "house") {
+    housingType = type;
     var bedrooms = bed;
     var bathrooms = bath;
     var dist = distance;
-    var price;
-    const matches = [];
     for (let i = 0; i < houseAptList.length; i++) {
         if (
             houseAptList[i].type == housingType &&
-            houseAptList[i].price <= price &&
+            houseAptList[i].price <= cost*2 &&
             houseAptList[i].social - socialScore <= 2 &&
             houseAptList[i].distance <= dist &&
             houseAptList[i].bath - bathrooms <= 1 &&
@@ -26,7 +32,7 @@ if (housingType == "apartment" || "house") {
     }
 }
 
-if (houseType == "dorm") {
+if (houseType == "hall" || "8 person suite" || "4 person suite") {
     var dormStyle = dormtype;
     var laundry = laundryscore;
     // do we want to add a north/south campus category to residence halls?
@@ -53,4 +59,10 @@ if (houseType == "dorm") {
         }
     }
 }
+
+var simple=function(){
+    return matches;
+}
+
+export {matches};
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <img src="../images/heelEstate.logo.PNG" height="250" width="250">
+  </header>
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <body>
+        <p id="testing">
+            hi
+
+        </p>
+        <script src="../library/matchsys.js"></script>
+        <p>
+            matches;
+        </p>
+    </body>
+</head>
+<body>
+=======
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Heel Estate</title>
+     <link rel="stylesheet" href="../main.css">
+  
+
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 50%;
+        /* The width is the width of the web page */
+      }
+      body {
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        color: rgb(0, 0, 0);
+        background-color: #ADDFFF;
+        text-align: center;
+        height: 200px;
+        }
+      
+
+    </style>
+
+    <script>
+      // Initialize and add the map
+      function initMap(lat, long) {
+        // The location of Chapel Hill
+        // const chapelhill = { lat: avery.long, lng: avery.long};
+        const chapelhill = {lat: 35.9132, lng: -79.0558};
+        // The map, centered at Chapel Hill
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: chapelhill,
+          
+        });
+        // The marker, positioned at Chapel Hill
+        const marker = new google.maps.Marker({
+          position: chapelhill,
+          map: map,
+        });
+        
+      }
+</script>
+
+
+
+
+  </head>
+
+  <body>
+>>>>>>> 4a5441b7c72cd537da3f8b82a3cce9d6aab8244f
+    
+    <h3>Listings That Match Your Criteria</h3>
+    <link rel = 'stylesheet' href='main.css'>
+
+    <!--The div element for the map -->
+    <div id= "outerdiv">
+    <div id ="map" />
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHCN34rXWhrzLlTZI1ZEuPaNk2Uo5Uw4M&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+
+   
+  </body>
+  <footer>
+
+    <body>Made in Chapel Hill</body>
+  </footer>
+
+</html>
