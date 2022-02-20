@@ -85,3 +85,7 @@ var teague = new ResHall(
 var winston = new ResHall(
     "Winston",35.91045771,-79.04614086,true,4,"corridor"
 )
+
+
+const resHallsList = [alderman, avery, carmichael, connor, craigeNorth, hardin, horton, joyner, kenan, mcIver, morrison, oldEast, oldWest, parker, ram1, ram2, ram3, ram4, ram5, spencer, teague, winston];
+export {alderman, avery, carmichael, connor, craigeNorth, hardin, horton, joyner, kenan, mcIver, morrison, oldEast, oldWest, parker, ram1, ram2, ram3, ram4, ram5, spencer, teague, winston, resHallsList};

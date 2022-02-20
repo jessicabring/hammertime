@@ -10,6 +10,7 @@ var social4 = document.querySelector(".social4");
 var select4 = false;
 var social5 = document.querySelector(".social5");
 var select5 = false;
+var submit = document.querySelector(".submit");
 
 social1.addEventListener('click', function() {
     if(!select2 && !select3 && !select4 && !select5) {
@@ -126,5 +127,20 @@ suite8.addEventListener('click', function() {
             suite8.style.backgroundColor = 'white';
             selectsuite8 = false;
         }
+    }
+});
+
+submit.addEventListener('click', function() {
+    if (selectdorm || selecthall) {
+        var dormtype;
+        if (!selectsuite) {
+            dormtype = "hall";
+        } else if (selectsuite4) {
+            dormtype = "4 person suite";
+        } else {
+            dormtype = "8 person suite";
+        }
+    } else {
+
     }
 });
