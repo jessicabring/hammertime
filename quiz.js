@@ -199,5 +199,3 @@ submit.addEventListener('click', function() {
 
     }
 });
-
-export {dormtype, socialscore, laundryscore, offcampus};
