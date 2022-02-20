@@ -4,6 +4,12 @@ import {houseAptList} from 'houseapts.js';
 import {socialscore, laundryscore, dormtype, bed, bath, distance} from 'quiz.js';
 
 var housingType;
+if (type != null) {
+    housingType = type;
+} else {
+    housingType = dormtype;
+}
+
 var socialScore = socialscore;
 
 if (housingType == "apartment" || "house") {
@@ -26,7 +32,7 @@ if (housingType == "apartment" || "house") {
     }
 }
 
-if (houseType == "dorm") {
+if (houseType == "hall" || "8 person suite" || "4 person suite") {
     var dormStyle = dormtype;
     var laundry = laundryscore;
     // do we want to add a north/south campus category to residence halls?

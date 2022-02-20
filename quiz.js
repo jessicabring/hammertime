@@ -18,6 +18,7 @@ var selectapt = false;
 var type;
 
 if (house != null) {
+    
 house.addEventListener('click', function() {
     type = house;
     if (!selectapt) {
