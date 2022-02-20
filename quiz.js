@@ -130,12 +130,6 @@ suite8.addEventListener('click', function() {
     }
 });
 
-<<<<<<< HEAD
-var submit = document.querySelector(".submit");
-
-
-=======
->>>>>>> 3a4bd122abb237a98b4ea8f68133c43d8756eb85
 submit.addEventListener('click', function() {
     if (selectdorm || selecthall) {
         var dormtype;
