@@ -130,6 +130,10 @@ suite8.addEventListener('click', function() {
     }
 });
 
+laundry1.addEventListener('select', function() {
+    laundryval = 1;
+});
+
 submit.addEventListener('click', function() {
     if (selectdorm || selecthall) {
         var dormtype;
@@ -140,6 +144,30 @@ submit.addEventListener('click', function() {
         } else {
             dormtype = "8 person suite";
         }
+
+        var socialscore;
+        if (select1) {
+            socialscore = 1;
+        } else if (select2) {
+            socialscore = 2;
+    
+        } else if (select3) {
+            socialscore = 3;
+        } else if (select4) {
+            socialscore = 4;
+        } else {
+            socialscore = 5;
+        }
+
+        var laundryscore;
+        if (document.getElementById("laundry1").value == 1) {
+            laundryscore = 1;
+        } else if (document.getElementById("laundry2").value == 2) {
+            laundryscore = 2;
+        } else {
+            laundryscore = 3;
+        }
+
     } else {
 
     }
