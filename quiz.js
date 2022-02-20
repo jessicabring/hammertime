@@ -31,7 +31,8 @@ house.addEventListener('click', function() {
 });
 
 apartment.addEventListener('click', function() {
-    offcampus = apartment; {}
+    offcampus = apartment;
+    if (!selecthouse) {
         if (!selectapt) {
             apartment.style.backgroundColor = '#5CB3FF';
             selectapt = true;
