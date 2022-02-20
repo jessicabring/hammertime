@@ -174,7 +174,17 @@ submit.addEventListener('click', function() {
             dormtype = "8 person suite";
         }
 
-        var socialscore;
+        var laundryscore = documet.getElementById("laundry").value;
+
+    } else {
+
+        var bed = document.getElementById("beds").value;
+        var bath = document.getElementById("baths").value;
+        var distance = document.getElementById("distance").value;
+        
+    }
+
+    var socialscore;
         if (select1) {
             socialscore = 1;
         } else if (select2) {
@@ -187,17 +197,4 @@ submit.addEventListener('click', function() {
         } else {
             socialscore = 5;
         }
-
-        var laundryscore;
-        if (document.getElementById("laundry1").value == 1) {
-            laundryscore = 1;
-        } else if (document.getElementById("laundry2").value == 2) {
-            laundryscore = 2;
-        } else {
-            laundryscore = 3;
-        }
-
-    } else {
-
-    }
 });
