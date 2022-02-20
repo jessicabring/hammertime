@@ -17,8 +17,9 @@ if (housingType == "apartment" || "house") {
             houseAptList[i].price <= price &&
             houseAptList[i].social - socialScore <= 2 &&
             houseAptList[i].distance <= distance &&
-            ) {
-            
+            houseAptList[i].bath - bathrooms <= 1 &&
+            houseAptList[i].bed - bedrooms <= 1) {
+            matches.push(houseAptList[i]);
         }
 
     }
