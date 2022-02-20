@@ -18,7 +18,7 @@ var selectapt = false;
 var type;
 
 if (house != null) {
-    
+
 house.addEventListener('click', function() {
     type = house;
     if (!selectapt) {
@@ -175,14 +175,14 @@ submit.addEventListener('click', function() {
             dormtype = "8 person suite";
         }
 
-        var laundryscore = documet.getElementById("laundry").value;
+        var laundryscore = parseInt(documet.getElementById("laundry").value);
 
     } else {
 
-        var bed = document.getElementById("beds").value;
-        var bath = document.getElementById("baths").value;
-        var distance = document.getElementById("distance").value;
-        var price = document.getElementById("price").value;
+        var bed = parseInt(document.getElementById("beds").value);
+        var bath = parseInt(document.getElementById("baths").value);
+        var distance = parseInt(document.getElementById("distance").value);
+        var price = parseInt(document.getElementById("price").value);
 
     }
 
