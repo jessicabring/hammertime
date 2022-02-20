@@ -128,3 +128,20 @@ suite8.addEventListener('click', function() {
         }
     }
 });
+
+var submit = document.querySelector(".submit");
+
+submit.addEventListener('click', function() {
+    if (selectdorm || selecthall) {
+        var dormtype;
+        if (!selectsuite) {
+            dormtype = "hall";
+        } else if (selectsuite4) {
+            dormtype = "4 person suite";
+        } else {
+            dormtype = "8 person suite";
+        }
+    } else {
+        
+    }
+});
