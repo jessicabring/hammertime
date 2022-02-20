@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <img src="../images/heelEstate.logo.PNG" height="250" width="250">
+  </header>
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Heel Estate</title>
+     <link rel="stylesheet" href="../main.css">
+  
+
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      
+      body {
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        color: rgb(0, 0, 0);
+        background-color: #ADDFFF;
+        text-align: center;
+        height: 200px;
+        }
+      
+
+    </style>
+<!-- 
+    <script>
+      // Initialize and add the map
+      function initMap(lat, long) {
+        // The location of Chapel Hill
+        const chapelhillapt = { lat: 35.90892, lng: -78.98312};
+        const chapelhillapt2 = {lat: 35.92547, lng: -79.05023};
+        // The map, centered at Chapel Hill
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: chapelhillapt,
+          
+        });
+        // The marker, positioned at Chapel Hill
+        const marker = new google.maps.Marker({
+          position: chapelhill,
+          map: map,
+        });
+
+        const marker1 = new google.maps.Marker({
+          position: chapelhillapt2,
+          map: map,
+        })
+        
+      }
+</script>
+
+ -->
+
+
+  
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+   
+
+    <head>
+      <title>Listings That Match Your Criteria</title>
+      <script>
+        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let labelIndex = 0;
+
+        function initMap() {
+        const morrison = {lat: 35.90464167, lng: -79.04618652};
+        const carmichael = {lat: 35.911111, lng: -79.04582};
+        const hojo = {lat: 35.9024, lng: -79.0433}
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: morrison,
+          
+        });
+        
+        // This event listener calls addMarker() when the map is clicked.
+        google.maps.event.addListener(map, "click", (event) => {
+          addMarker(event.latLng, map);
+          
+        });
+        // Add a marker at the center of the map.
+        addMarker(morrison, map);
+        addMarker(carmichael, map);
+        addMarker(hojo, map);
+        }
+
+        // Adds a marker to the map.
+        function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+          new google.maps.Marker({
+            position: location,
+            label: labels[labelIndex++ % labels.length],
+            map: map,
+          });
+
+          }
+
+      </script>
+      <!-- jsFiddle will insert css and js -->
+    </head>
+    <body>
+      <div id="map"></div>
+  
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+        async
+      ></script>
+    </body>
+<body>
+  
+  <h3>Listings That Match Your Criteria:</h3>
+  <li>Morrison</li>
+  <li>Carmichael</li>
+  <li>Hinton James</li>
+  <p></p>
+  <link rel = 'stylesheet' href='main.css'>
+
+  <!--The div element for the map -->
+  
+  
+   
+  </body>
+  <footer>
+
+    <body>Made in Chapel Hill</body>
+  </footer>
+
+</html>
