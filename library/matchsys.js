@@ -12,7 +12,7 @@ if (housingType == "apartment" || "house") {
     var dist = distance;
     var price;
     const matches = [];
-    for (let i = 0; i < resHallsList.length; i++) {
+    for (let i = 0; i < houseAptList.length; i++) {
         if (
             houseAptList[i].type == housingType &&
             houseAptList[i].price <= price &&

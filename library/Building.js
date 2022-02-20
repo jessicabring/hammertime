@@ -6,7 +6,7 @@ class Building {
         this.distance = distance;
         this.type = type;
         this.price = price;
-        this.socialscore = socialscore;
+        this.social = socialscore;
         this.bed = bed;
         this.bath = bath;
     }
