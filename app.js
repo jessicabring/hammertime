@@ -42,6 +42,7 @@ function initMap() {
 
 
 var data;
+  var data;
 	$.ajax({
 	  type: "GET",  
 	  url: "databased.csv",
