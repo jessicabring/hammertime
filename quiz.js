@@ -17,6 +17,7 @@ var apartment = document.querySelector(".apartment");
 var selectapt = false;
 var offcampus;
 
+if (house != null) {
 house.addEventListener('click', function() {
     offcampus = house;
     if (!selectapt) {
@@ -42,6 +43,7 @@ apartment.addEventListener('click', function() {
         }
     }   
 });
+}
 
 social1.addEventListener('click', function() {
     if(!select2 && !select3 && !select4 && !select5) {
