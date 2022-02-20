@@ -10,6 +10,7 @@ var social4 = document.querySelector(".social4");
 var select4 = false;
 var social5 = document.querySelector(".social5");
 var select5 = false;
+var submit = document.querySelector(".submit");
 
 social1.addEventListener('click', function() {
     if(!select2 && !select3 && !select4 && !select5) {
@@ -129,9 +130,12 @@ suite8.addEventListener('click', function() {
     }
 });
 
+<<<<<<< HEAD
 var submit = document.querySelector(".submit");
 
 
+=======
+>>>>>>> 3a4bd122abb237a98b4ea8f68133c43d8756eb85
 submit.addEventListener('click', function() {
     if (selectdorm || selecthall) {
         var dormtype;
@@ -143,6 +147,6 @@ submit.addEventListener('click', function() {
             dormtype = "8 person suite";
         }
     } else {
-        
+
     }
 });
