@@ -163,10 +163,6 @@ suite8.addEventListener('click', function() {
     }
 });
 
-laundry1.addEventListener('select', function() {
-    laundryval = 1;
-});
-
 submit.addEventListener('click', function() {
     if (selectdorm || selecthall) {
         var dormtype;
