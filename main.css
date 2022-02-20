@@ -21,3 +21,11 @@ header {
 body {
     text-align : center;
     }
+
+    footer {
+        clear : both;
+        padding : 3em 10%;
+        color : #ADDFFF;
+        background : #0c6d85;
+        text-align : center;
+        }
