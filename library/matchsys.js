@@ -1,9 +1,10 @@
 'use strict'
 import {resHallsList} from 'reshalls.js';
 import {houseAptList} from 'houseapts.js';
+import {socialscore} from 'quiz.js';
 
 var housingType;
-var socialScore;
+var socialScore = socialscore;
 
 if (housingType == "apartment" || "house") {
     var bedrooms;
