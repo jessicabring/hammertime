@@ -10,8 +10,16 @@ if (housingType == "apartment" || "house") {
     var bathrooms;
     var distance;
     var price;
+    const matches = [];
     for (let i = 0; i < resHallsList.length; i++) {
-        
+        if (
+            houseAptList[i].type == housingType &&
+            houseAptList[i].price <= price &&
+            houseAptList[i].social - socialScore <= 2 &&
+            houseAptList[i].distance <= distance &&
+            ) {
+            
+        }
     }
 }
 
