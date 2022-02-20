@@ -60,6 +60,7 @@ if (houseType == "hall" || "8 person suite" || "4 person suite") {
     }
 }
 
+matches[0] = resHallsList[0];
 var simple=function(){
     return matches;
 }

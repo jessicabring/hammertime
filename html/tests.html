@@ -7,28 +7,9 @@
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing</title>
-    <body>
-        <p id="testing">
-            hi
-
-        </p>
-        <script src="../library/matchsys.js"></script>
-        <p>
-            matches;
-        </p>
-    </body>
-</head>
-<body>
-=======
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Heel Estate</title>
      <link rel="stylesheet" href="../main.css">
-  
-
-
     <style type="text/css">
       /* Set the size of the div element that contains the map */
       #map {
@@ -48,13 +29,15 @@
       
 
     </style>
+    <script src="matchsys.js">
+    </script>
 
     <script>
       // Initialize and add the map
-      function initMap(lat, long) {
+      function initMap(latitude, long) {
         // The location of Chapel Hill
-        // const chapelhill = { lat: avery.long, lng: avery.long};
-        const chapelhill = {lat: 35.9132, lng: -79.0558};
+        const chapelhill = {lat: 35.9045, lng: -79.0462};
+        const chapelhillStacy = {lat: 35.91290, lng: -79.04630};
         // The map, centered at Chapel Hill
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
@@ -66,8 +49,17 @@
           position: chapelhill,
           map: map,
         });
+        const marker2 = new google.maps.Marker({
+          position: chapelhillStacy,
+          map: map,
+        });
+        const marker3 = new google.maps.Marker({
+          position: chapelhillAvery,
+          map: map,
+        });
         
       }
+      initMap(35.3238, -80.6559);
 </script>
 
 
@@ -76,7 +68,6 @@
   </head>
 
   <body>
->>>>>>> 4a5441b7c72cd537da3f8b82a3cce9d6aab8244f
     
     <h3>Listings That Match Your Criteria</h3>
     <link rel = 'stylesheet' href='main.css'>
