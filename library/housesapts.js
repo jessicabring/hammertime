@@ -31,9 +31,12 @@ var chapelRidge = new Building(
 )
 
 var shadowood = new Building(
-    "Shadowood Apts",35.94698,-79.06046,2.9,8,Apt,2,2,2,1308
+    "Shadowood Apts",35.94698,-79.06046,2.9,8,"Apartment",2,2,2,1308
 )
 
 var kingswood = new Building(
     "Kingswood",35.90248,-79.06411,3,7,"Apartment",2,2,1,1163
 )
+
+const houseAptList = [crosstown, trinity, stratMLK, stratHills, royal, pinegate, southsq, chapelRidge, shadowood, kingswood];
+export {crosstown, trinity, stratMLK, stratHills, royal, pinegate, southsq, chapelRidge, shadowood, kingswood, houseAptList};
