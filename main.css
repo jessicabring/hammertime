@@ -23,9 +23,10 @@ body {
     }
 
     footer {
-        clear : both;
-        padding : 3em 10%;
-        color : #ADDFFF;
+        height : 150px;
+        padding : 20px 0 70px;
+        color : blueviolet;
         background : #0c6d85;
         text-align : center;
+        transition : color 0.25s ease-out, box-shadow 0.25s ease-out;
         }
