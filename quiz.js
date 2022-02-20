@@ -1,8 +1,5 @@
 'use strict'
 
-import {alderman, avery, carmichael, connor, craigeNorth, hardin, horton, joyner, kenan, mcIver, morrison, oldEast, oldWest, parker, ram1, ram2, ram3, ram4, ram5, spencer, teague, winston, resHallsList} from './library/reshalls.js';
-import {crosstown, trinity, stratMLK, stratHills, royal, pinegate, southsq, chapelRidge, shadowood, kingswood, houseAptList} from './library/housesapts.js';
-
 var social1 = document.querySelector(".social1");
 var select1 = false;
 var social2 = document.querySelector(".social2");
