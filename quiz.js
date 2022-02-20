@@ -81,30 +81,6 @@ var select4 = false;
 var suite8 = document.querySelector('.8suite');
 var select8 = false;
 
-hall.addEventListener('click', function() {
-    if(!selectsuite) {
-        if(!selecthall) {
-            hall.style.backgroundColor = '#5CB3FF';
-            selecthall = true;
-        } else {
-            hall.style.backgroundColor = 'white';
-            selecthall = false;
-        }
-    }
-});
-
-suite.addEventListener('click', function() {
-    if(!selecthall) {
-        if(!selectsuite) {
-            suite.style.backgroundColor = '#5CB3FF';
-            selectsuite = true;
-        } else {
-            suite.style.backgroundColor = 'white';
-            selectsuite = false;
-        }
-    }
-});
-
 suite4.addEventListener('click', function() {
     if(!select8) {
         if(!select4) {
