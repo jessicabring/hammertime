@@ -1,7 +1,7 @@
 'use strict'
 import {resHallsList} from 'reshalls.js';
 import {houseAptList} from 'houseapts.js';
-import {socialscore, laundryscore, dormtype, bed, bath, distance} from 'quiz.js';
+import {socialscore, laundryscore, dormtype, bed, bath, distance, price, type} from 'quiz.js';
 
 var housingType;
 if (type != null) {
@@ -13,15 +13,16 @@ if (type != null) {
 var socialScore = socialscore;
 
 if (housingType == "apartment" || "house") {
+    housingType = type;
     var bedrooms = bed;
     var bathrooms = bath;
     var dist = distance;
-    var price;
+    var cost = price;
     const matches = [];
     for (let i = 0; i < houseAptList.length; i++) {
         if (
             houseAptList[i].type == housingType &&
-            houseAptList[i].price <= price &&
+            houseAptList[i].price <= cost &&
             houseAptList[i].social - socialScore <= 2 &&
             houseAptList[i].distance <= dist &&
             houseAptList[i].bath - bathrooms <= 1 &&

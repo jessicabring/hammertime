@@ -1,17 +1,17 @@
 var alderman = new ResHall(
-    "Alderman",35.9149,-79.04816,true, 2,"corridor"
+    "Alderman",35.9149,-79.04816,true, 2,"hall"
 )
 
 var avery = new ResHall(
-    "Avery", 35.9065, -79.04425,true, 2,"suite"
+    "Avery", 35.9065, -79.04425,true, 2,"4 person suite"
 )
 
 var carmichael = new ResHall(
-    "Carmichael",35.90863,-79.04582,true, 4,"suite"
+    "Carmichael",35.90863,-79.04582,true, 4, "8 person suite"
 )
 
 var connor = new ResHall(
-    "Connor",35.91111,-79.04617,true, 3,"corridor"
+    "Connor",35.91111,-79.04617,true, 3,"hall"
 )
 
 var craigeNorth = new ResHall(
@@ -27,31 +27,31 @@ var horton = new ResHall(
 )
 
 var joyner = new ResHall(
-    "Joyner",35.91268,-79.04658,true, 3,"corridor"
+    "Joyner",35.91268,-79.04658,true, 3,"hall"
 )
 
 var kenan = new ResHall(
-    "Kenan",35.91471,-79.04743,true, 2,"corridor"
+    "Kenan",35.91471,-79.04743,true, 2,"hall"
 )
 
 var mcIver = new ResHall(
-    "McIver",35.91423619,-79.04788676,true, 2,"corridor"
+    "McIver",35.91423619,-79.04788676,true, 2,"hall"
 )
 
 var morrison = new ResHall(
-    "Morrison",35.90464167,-79.04618652,true, 4,"suite"
+    "Morrison",35.90464167,-79.04618652,true, 4,"8 person suite"
 )
 
 var oldEast = new ResHall(
-    "Old East",35.91247771,-79.05065187,true, 2,"corridor"
+    "Old East",35.91247771,-79.05065187,true, 2,"hall"
 )
 
 var oldWest = new ResHall(
-    "Old West",35.91209545,-79.05172586,true, 2,"corridor"
+    "Old West",35.91209545,-79.05172586,true, 2,"hall"
 )
 
 var parker = new ResHall(
-    "Parker",35.90723797,-79.04430109,true,3,"suite"
+    "Parker",35.90723797,-79.04430109,true,3,"4 person suite"
 )
 
 var ram1 = new ResHall(
@@ -75,15 +75,15 @@ var ram5 = new ResHall(
 )
 
 var spencer = new ResHall(
-    "Spencer",35.91505426,-79.04932027,true,1,"corridor"
+    "Spencer",35.91505426,-79.04932027,true,1,"hall"
 )
 
 var teague = new ResHall(
-    "Teague",35.90789761,-79.04500776,false,2,"suite"
+    "Teague",35.90789761,-79.04500776,false,2,"4 person suite"
 )
 
 var winston = new ResHall(
-    "Winston",35.91045771,-79.04614086,true,4,"corridor"
+    "Winston",35.91045771,-79.04614086,true,4,"hall"
 )
 
 
