@@ -1,15 +1,15 @@
 'use strict'
 import {resHallsList} from 'reshalls.js';
 import {houseAptList} from 'houseapts.js';
-import {socialscore, laundryscore, dormtype} from 'quiz.js';
+import {socialscore, laundryscore, dormtype, bed, bath, distance} from 'quiz.js';
 
 var housingType;
 var socialScore = socialscore;
 
 if (housingType == "apartment" || "house") {
-    var bedrooms;
-    var bathrooms;
-    var distance;
+    var bedrooms = bed;
+    var bathrooms = bath;
+    var dist = distance;
     var price;
     const matches = [];
     for (let i = 0; i < resHallsList.length; i++) {
@@ -17,7 +17,7 @@ if (housingType == "apartment" || "house") {
             houseAptList[i].type == housingType &&
             houseAptList[i].price <= price &&
             houseAptList[i].social - socialScore <= 2 &&
-            houseAptList[i].distance <= distance &&
+            houseAptList[i].distance <= dist &&
             houseAptList[i].bath - bathrooms <= 1 &&
             houseAptList[i].bed - bedrooms <= 1) {
             matches.push(houseAptList[i]);
@@ -31,8 +31,7 @@ if (houseType == "dorm") {
     var laundry = laundryscore;
     // do we want to add a north/south campus category to residence halls?
     // I'm also working on figuring out how many ppl each dorm accommodates per suite
-    if (dormStyle == "suite-style") {
-        var suiteStyle;
+    if (dormStyle == "4 person suite" || "8 person suite") {
         if (laundry == "Not important") {
             for (let i = 0; i < resHallsList.length; i++) {
                 if (
