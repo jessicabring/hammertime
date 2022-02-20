@@ -22,7 +22,7 @@ if (housingType == "apartment" || "house") {
     for (let i = 0; i < houseAptList.length; i++) {
         if (
             houseAptList[i].type == housingType &&
-            houseAptList[i].price <= cost &&
+            houseAptList[i].price <= cost*2 &&
             houseAptList[i].social - socialScore <= 2 &&
             houseAptList[i].distance <= dist &&
             houseAptList[i].bath - bathrooms <= 1 &&
