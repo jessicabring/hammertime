@@ -181,7 +181,8 @@ submit.addEventListener('click', function() {
         var bed = document.getElementById("beds").value;
         var bath = document.getElementById("baths").value;
         var distance = document.getElementById("distance").value;
-        
+        var price = document.getElementById("price").value;
+
     }
 
     var socialscore;
