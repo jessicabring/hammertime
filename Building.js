@@ -1,5 +1,6 @@
 class Building {
-    constructor(lat, long, distance, type, price, social, bed, bath) {
+    constructor(name, lat, long, distance, type, price, social, bed, bath) {
+        this.name = name;
         this.lat = lat;
         this.long = long;
         this.distance = distance;
