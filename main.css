@@ -9,9 +9,9 @@ p {
 header {
     height : 150px;
     padding : 20px 0 70px 0;
-    background : url(../hammertime/images/REALMAP.png) 50% 0 no-repeat;
+    background : url(../hammertime/images/map.png) 50% 0 no-repeat;
     background-attachment : fixed, fixed, fixed, scroll;
-    background-image : url(../hammertime/images/REALMAP.png);
+    background-image : url(../hammertime/images/map.png);
     background-position : 0 0, 0 0, -5px -25px, 0 50%;
     background-repeat : repeat, repeat, repeat, no-repeat;
     background-size : auto, auto, auto, cover;
@@ -26,9 +26,9 @@ body {
         height : 50px;
         padding : 20px 0 70px;
         color : rgb(255, 255, 255);
-        background : url(../hammertime/images/REALMAP.png) 50% no-repeat #0c6d85;
+        background : url(../hammertime/images/map.png) 50% no-repeat #0c6d85;
         background-attachment : fixed, fixed, fixed, scroll;
-        background-image : url(../hammertime/images/REALMAP.png);
+        background-image : url(../hammertime/images/map.png);
         background-position : 0 0, 0 0, -5px -25px, 0 50%;
         background-repeat : repeat, repeat, repeat, no-repeat;
         background-size : auto, auto, auto, cover;
