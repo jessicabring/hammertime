@@ -77,30 +77,30 @@ var selecthall = false;
 var suite = document.querySelector('.suitestyle');
 var selectsuite = false;
 var suite4 = document.querySelector('.4suite');
-var select4 = false;
+var selectsuite4 = false;
 var suite8 = document.querySelector('.8suite');
-var select8 = false;
+var selectsuite8 = false;
 
 suite4.addEventListener('click', function() {
-    if(!select8) {
-        if(!select4) {
+    if(!selectsuite8) {
+        if(!selectsuite4) {
             suite4.style.backgroundColor = '#5CB3FF';
-            select4 = true;
+            selectsuite4 = true;
         } else {
             suite4.style.backgroundColor = 'white';
-            select4 = false;
+            selectsuite4 = false;
         }
     }
 });
 
 suite8.addEventListener('click', function() {
-    if(!select4) {
-        if(!select8) {
+    if(!selectsuite4) {
+        if(!selectsuite8) {
             suite8.style.backgroundColor = '#5CB3FF';
-            select8 = true;
+            selectsuite8 = true;
         } else {
             suite8.style.backgroundColor = 'white';
-            select8 = false;
+            selectsuite8 = false;
         }
     }
 });
