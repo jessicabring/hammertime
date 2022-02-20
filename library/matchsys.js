@@ -1,7 +1,7 @@
 'use strict'
 import {resHallsList} from 'reshalls.js';
 import {houseAptList} from 'houseapts.js';
-import {socialscore} from 'quiz.js';
+import {socialscore, laundryscore, dormtype} from 'quiz.js';
 
 var housingType;
 var socialScore = socialscore;
@@ -27,8 +27,8 @@ if (housingType == "apartment" || "house") {
 }
 
 if (houseType == "dorm") {
-    var dormStyle;
-    var laundry;
+    var dormStyle = dormtype;
+    var laundry = laundryscore;
     // do we want to add a north/south campus category to residence halls?
     // I'm also working on figuring out how many ppl each dorm accommodates per suite
     if (dormStyle == "suite-style") {
