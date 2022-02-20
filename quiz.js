@@ -19,24 +19,27 @@ var offcampus;
 
 house.addEventListener('click', function() {
     offcampus = house;
-    if (!selecthouse) {
-        house.style.backgroundColor = '#5CB3FF';
-        selecthouse = true;
-    } else {
-        house.style.backgroundColor = 'white';
-        selecthouse = false;
+    if (!selectapt) {
+        if (!selecthouse) {
+            house.style.backgroundColor = '#5CB3FF';
+            selecthouse = true;
+        } else {
+            house.style.backgroundColor = 'white';
+            selecthouse = false;
+        }
     }
 });
 
 apartment.addEventListener('click', function() {
-    offcampus = apartment;
-    if (!selectapt) {
-        apartment.style.backgroundColor = '#5CB3FF';
-        selectapt = true;
-    } else {
-        apartment.style.backgroundColor = 'white';
-        selectapt = false;
-    }
+    offcampus = apartment; {}
+        if (!selectapt) {
+            apartment.style.backgroundColor = '#5CB3FF';
+            selectapt = true;
+        } else {
+            apartment.style.backgroundColor = 'white';
+            selectapt = false;
+        }
+    }   
 });
 
 social1.addEventListener('click', function() {
