@@ -1,1 +1,0 @@
-var Crosstown = new Building()

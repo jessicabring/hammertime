@@ -9,17 +9,21 @@
 <body>
     <h1>Heel Estate</h1>
     <link rel = 'stylesheet' href='main.css'>
-        <p id="msg">Find your best housing fit around UNC Chapel Hill!</p>
+        <p id="msg">Find your best housing fit around UNC Chapel Hill!
+        <p id="msg2">
+            *To change an answer, click the button again, then make new selection*  
+            </p>
+        </p>
         <h2>Take the Quiz - On-campus housing:</h2>
         <h3 id="q1">Would you prefer hall-style or suite-style?</h3>
         <p id="dorminfo">Hall-style are on north campus, and suite-style are more on south campus!</p>
-        <button class="hallstyle" value="hall style">Hall-style</button>
-        <button class="suitestyle" value="suite style">Suite-style</button>
+        <button class="hallstyle">Hall-style</button>
+        <button class="suitestyle">Suite-style</button>
 
         <h3 id="q2">If you selected suite-style, would you prefer a 4-person or 8-person suite?</h3>
         <p id="note">If you chose hall-style, skip this question.</p>
-        <button class="4suite" value="4">4 person</button>
-        <button class="8suite" value="8">8 person</button>
+        <button class="4suite">4 person</button>
+        <button class="8suite">8 person</button>
 
         <h3 id="q3">How much of a priority is having a laundry room in your residence hall?</h3>
         <select name="laundry" id="laundry">
@@ -37,8 +41,9 @@
         <button class="social5" value="5">5</button>
 
         <p ></p>
-        
-        <button class="btn">SUBMIT</h2>
+        <a href="googlemap.html">
+            <button class="btn">SUBMIT</h2>
+        </a>
         <script src="quiz.js"></script>
         <style>
             body {
