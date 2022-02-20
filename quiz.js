@@ -15,11 +15,11 @@ var house = document.querySelector(".house");
 var selecthouse = false;
 var apartment = document.querySelector(".apartment");
 var selectapt = false;
-var offcampus;
+var type;
 
 if (house != null) {
 house.addEventListener('click', function() {
-    offcampus = house;
+    type = house;
     if (!selectapt) {
         if (!selecthouse) {
             house.style.backgroundColor = '#5CB3FF';
@@ -32,7 +32,7 @@ house.addEventListener('click', function() {
 });
 
 apartment.addEventListener('click', function() {
-    offcampus = apartment;
+    type = apartment;
     if (!selecthouse) {
         if (!selectapt) {
             apartment.style.backgroundColor = '#5CB3FF';
@@ -181,7 +181,8 @@ submit.addEventListener('click', function() {
         var bed = document.getElementById("beds").value;
         var bath = document.getElementById("baths").value;
         var distance = document.getElementById("distance").value;
-        
+        var price = document.getElementById("price").value;
+
     }
 
     var socialscore;
