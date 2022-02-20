@@ -3,7 +3,7 @@
 }
 
 p {
-    color: darkcyan
+    color: #000000;
 }
 
 header {
@@ -38,4 +38,18 @@ body {
 
     #outerdiv {border: 4px solid rgb(31, 64, 172); width: 99%; height: 205%; position:sticky; text-align:center; padding: 20 px 0 70px;}
 
-    #map {border: 4px solid rgb(118, 189, 255); width: 80%; height: 80%; margin:1px auto; display:inline-block}
+   
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 200%;
+        width: 100%;
+    }
+    
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }

@@ -21,7 +21,7 @@
         <h3 id="q0">Show only:</h3>
         <button class="house">Houses</button>
         <button class="apartment">Apartments</button>
-        
+
         <h3 id="q1">How big of a place are you looking for?</h3>
         <label for="beds">Bedrooms:</label>
             <select name="beds" id="beds">
@@ -55,10 +55,10 @@
         <label for="maxprice">Under:</label> 
         <select name="maxprice" id="maxprice">
                 <option value="default"></option>
-                <option value="range1">$600</option>
-                <option value="range2">$700</option>
-                <option value="range3">$800</option>
-                <option value="range4">None</option>
+                <option value="$600">$600</option>
+                <option value="$700">$700</option>
+                <option value="$800">$800</option>
+                <option value="max">None</option>
             </select>
 
         <h3 id="q4">How social of an environment would you enjoy?</h3>
@@ -76,6 +76,7 @@
             <button class="btn">BACK</button>
         </a>
         <script src="../quiz.js"></script>
+        <script src="../../hammertime/library/matchsys.js"></script>
         <style>
             body {
                 background: #ADDFFF;

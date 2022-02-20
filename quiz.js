@@ -15,29 +15,35 @@ var house = document.querySelector(".house");
 var selecthouse = false;
 var apartment = document.querySelector(".apartment");
 var selectapt = false;
-var offcampus;
+var type;
 
+if (house != null) {
 house.addEventListener('click', function() {
-    offcampus = house;
-    if (!selecthouse) {
-        house.style.backgroundColor = '#5CB3FF';
-        selecthouse = true;
-    } else {
-        house.style.backgroundColor = 'white';
-        selecthouse = false;
+    type = house;
+    if (!selectapt) {
+        if (!selecthouse) {
+            house.style.backgroundColor = '#5CB3FF';
+            selecthouse = true;
+        } else {
+            house.style.backgroundColor = 'white';
+            selecthouse = false;
+        }
     }
 });
 
 apartment.addEventListener('click', function() {
-    offcampus = apartment;
-    if (!selectapt) {
-        apartment.style.backgroundColor = '#5CB3FF';
-        selectapt = true;
-    } else {
-        apartment.style.backgroundColor = 'white';
-        selectapt = false;
-    }
+    type = apartment;
+    if (!selecthouse) {
+        if (!selectapt) {
+            apartment.style.backgroundColor = '#5CB3FF';
+            selectapt = true;
+        } else {
+            apartment.style.backgroundColor = 'white';
+            selectapt = false;
+        }
+    }   
 });
+}
 
 social1.addEventListener('click', function() {
     if(!select2 && !select3 && !select4 && !select5) {
@@ -157,10 +163,6 @@ suite8.addEventListener('click', function() {
     }
 });
 
-laundry1.addEventListener('select', function() {
-    laundryval = 1;
-});
-
 submit.addEventListener('click', function() {
     if (selectdorm || selecthall) {
         var dormtype;
@@ -172,7 +174,18 @@ submit.addEventListener('click', function() {
             dormtype = "8 person suite";
         }
 
-        var socialscore;
+        var laundryscore = documet.getElementById("laundry").value;
+
+    } else {
+
+        var bed = document.getElementById("beds").value;
+        var bath = document.getElementById("baths").value;
+        var distance = document.getElementById("distance").value;
+        var price = document.getElementById("price").value;
+
+    }
+
+    var socialscore;
         if (select1) {
             socialscore = 1;
         } else if (select2) {
@@ -185,19 +198,4 @@ submit.addEventListener('click', function() {
         } else {
             socialscore = 5;
         }
-
-        var laundryscore;
-        if (document.getElementById("laundry1").value == 1) {
-            laundryscore = 1;
-        } else if (document.getElementById("laundry2").value == 2) {
-            laundryscore = 2;
-        } else {
-            laundryscore = 3;
-        }
-
-    } else {
-
-    }
 });
-
-export {dormtype, socialscore, laundryscore, offcampus};
