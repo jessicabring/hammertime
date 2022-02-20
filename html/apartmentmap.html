@@ -69,12 +69,12 @@
         let labelIndex = 0;
 
         function initMap() {
-        const chapelridge = {lat: 35.94698, lng: -79.06046};
-        const southsquare = {lat: 35.96269, lng: -78.957111};
-        const pinegate = {lat: 35.948025, lng: -79.00964};
+        const kingswood = {lat: 35.90248, lng: -79.06411};
+        const stratfordMLK = {lat: 35.92899, lng: -79.05551};
+        const stratfordHills = {lat: 35.92547, lng: -79.05023};
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 12,
-          center: chapelridge,
+          center: stratfordMLK,
           
         });
         
@@ -84,9 +84,9 @@
           
         });
         // Add a marker at the center of the map.
-        addMarker(chapelridge, map);
-        addMarker(southsquare, map);
-        addMarker(pinegate, map);
+        addMarker(kingswood, map);
+        addMarker(stratfordMLK, map);
+        addMarker(stratfordHills, map);
         }
 
         // Adds a marker to the map.
@@ -115,7 +115,12 @@
     </body>
 <body>
   
-  <h3>Listings That Match Your Criteria</h3>
+  <h3>Listings That Match Your Criteria:</h3>
+    <li>Kingswood</li>
+    <li>Stratford MLK </li>
+    <li>Stratford Hills</li>
+    <p></p>
+
   <link rel = 'stylesheet' href='main.css'>
 
   <!--The div element for the map -->
