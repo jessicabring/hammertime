@@ -28,22 +28,26 @@ if (housingType == "apartment" || "house") {
 if (houseType == "dorm") {
     var dormStyle;
     var laundry;
-    if (laundry == "Not important") {
-        for (let i = 0; i < resHallsList.length; i++) {
-            if (
-                resHallsList[i].type == housingType &&
-                resHallsList[i].social - socialScore <= 2) {
-                matches.push(resHallsList[i]);
-            }
-        }
-    }
+    // do we want to add a north/south campus category to residence halls?
     if (dormStyle == "suite-style") {
         var suiteStyle;
-        for (let i = 0; i < resHallsList.length; i++) {
-            if (
-                resHallsList[i].type == housingType &&
-                resHallsList[i].social - socialScore <= 2) {
-                matches.push(resHallsList[i]);
+        if (laundry == "Not important") {
+            for (let i = 0; i < resHallsList.length; i++) {
+                if (
+                    resHallsList[i].style == dormStyle &&
+                    resHallsList[i].social - socialScore <= 2) {
+                    matches.push(resHallsList[i]);
+                }
+            }
+        }
+        else {
+            for (let i = 0; i < resHallsList.length; i++) {
+                if (
+                    resHallsList[i].style == dormStyle &&
+                    resHallsList[i].social - socialScore <= 2 &&
+                    resHallsList[i].laundry) {
+                    matches.push(resHallsList[i]);
+                }
             }
         }
     }
